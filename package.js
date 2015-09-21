@@ -9,10 +9,10 @@ Package.describe({
 
 Package.onUse(function (api) {
   api.versionsFrom('0.9.0');
-  api.export('Markdown', 'client');
   api.addFiles([
-    'pagedown/Markdown.Editor.js',
     'pagedown/Markdown.Converter.js',
     'pagedown/Markdown.Sanitizer.js',
+    'pagedown/Markdown.Editor.js',
   ], 'client');
+  api.export('Markdown', 'client');
 });
